@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #45b3eb;
+}
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+.container {
+    box-sizing: content-box;
+    border: 10px solid #9aa7b1;
+    background-color: #043a84;
+    margin: auto;
+    margin-top: 52px;
+    border-radius: 20px;
+    position: relative;
+    width: 860px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url('./assets/corona.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -80px;
+    left: -80px;
+}
+.container::after {
+    content: '';
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: url('./assets/spray.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -40px;
+    right: -70px;
+    transform: rotate(-30deg);
+}
+.counter {
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+}
+.sidePanel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.board {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 600px;
+    flex-wrap: wrap;
+}
+.startScreen {
+    padding: 20px;
+}
+#letsGo, #playAgain {
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.lifes {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+.cell {
+    width: 5%;
+    height: 5%;
+}
+.cellLifes {
+    width: 33.3333333%;
+    height: 50px;
+}
+.invader {
+    background-image: url('assets/corona.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ship {
+    /* background: url('assets/spray.png') no-repeat center center / contain; */
+    position: relative;
+}
+.ship::after {
+    content: "";
+    background: url('assets/spray.png') no-repeat center center / contain;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.soapLife {
+    background: url('assets/soap.png') no-repeat center center / contain;
+}
+.shoot {
+    background-image: url('assets/soap.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bomb {
+    background-image: url('assets/corona.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.winner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 1000px;
+}
+.gameOver, .winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+.startScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainText {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.hiddenElement {
+    display: none !important;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer p, footer a {
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 13px;
+}

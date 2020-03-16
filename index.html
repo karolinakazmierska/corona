@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <title>CoronaVirus Challenge</title>
+    </head>
+
+    <body>
+
+        <audio id='audio'></audio>
+        <audio id='music'></audio>
+
+        <div class="frame">
+
+            <div class="sidebar">
+                <p class="mainText">XXX</p>
+                <p class="mainText">XXX</p>
+                <p class="mainText">XXX</p>
+            </div>
+
+            <div class="container">
+                <!-- Side panel -->
+                <div class="sidePanel">
+                    <div class="lifes">
+                        <div class="cellLifes soapLife"></div>
+                        <div class="cellLifes soapLife"></div>
+                        <div class="cellLifes soapLife"></div>
+                    </div>
+                </div>
+
+                <!-- Board -->
+                <div class="board"></div>
+
+                <!-- Counter -->
+                <h3 class="counter">11</h3>
+
+                <!-- Welcome screen -->
+                <div class="startScreen">
+                    <div>
+                        <h1>Coronavirus challenge</h1>
+                        <p class="mainText">The Earth is under attack of a malicious virus named just like a delicious beer, and your weapons are soap and desinfectant. Use them wisely!</p>
+                        <p class="mainText">Shoot you powerful soap bars with 'spacebar', and move the spray container with the arrows to the left and right</p>
+                    </div>
+                    <button id="letsGo">LET'S GO!</button>
+                </div>
+
+                <!-- Game over -->
+                <div class="gameOver hiddenElement">
+                    <h1>GAME OVER</h1>
+                    <div class="mainText">
+                        You are under quarantine under 14 days!
+                    </div>
+                    <button id="playAgain" onClick="window.location.reload();">PLAY AGAIN</button>
+                </div>
+
+                <!-- Winner -->
+                <div class="winner hiddenElement">
+                    <h1>VICTORY</h1>
+                    <div class="mainText">
+                        Well done! You defeated the virus! Here you have a Corona
+                    </div>
+                    <img src="./assets/coronabeer.png" alt="">
+                    <button id="playAgain" onClick="window.location.reload();">PLAY AGAIN</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Code base by <a href="https://github.com/dromerosalem">dromerosalem</a> | </p>
+            <p>Game adaptation by <a href="https://github.com/karolinakazmierska">karolinakazmierska</a> | </p>
+            <p>Graphics and original idea by <a href="https://www.chido-fajny.com/">Chido-Fajny</a> | </p>
+            <p>Music by <a href="https://www.youtube.com/watch?v=zG7KShvqg9A">Mister Cumbia</a></p>
+        </footer>
+    </body>
+</html>
